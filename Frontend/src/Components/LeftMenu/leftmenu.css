@@ -1,0 +1,28 @@
+.left-menu {
+  width: 90%;
+  padding: 1rem;
+  /* box-shadow: 2px 0px 5px -2px #888; */
+}
+.left-menu h2 {
+  font-size: 1.2rem;
+  padding: 0.5rem 0px;
+  display: grid;
+  place-items: center;
+}
+.left-menu ul li {
+  list-style: none;
+  padding: 10px 20px;
+  display: grid;
+  place-items: center;
+}
+.left-menu ul li a {
+  text-decoration: none;
+  color: black;
+}
+.left-menu ul hr {
+  width: 30%;
+  border: none;
+  height: 2px;
+  border-radius: 10px;
+  background-color: black;
+}

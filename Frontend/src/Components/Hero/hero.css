@@ -1,0 +1,11 @@
+.hero {
+  display: grid;
+  place-items: center;
+  padding: 2rem 0;
+}
+.hero-List{
+  width: 90%;
+  place-items: center;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
