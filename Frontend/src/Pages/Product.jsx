@@ -1,18 +1,18 @@
-import { useParams } from 'react-router-dom';
-import all_product from '../assets/All_Product';
-import Breadcurm from "../Components/Breadcurm/breadcurm";
-import Display from "../Components/Display/display";
+import { useParams } from 'react-router-dom'
+import ProductDisplay from '../Components/Display/ProductDisplay'
+import AllProduct from '../assets/Data/AllProduct'
+import RelateProduct from '../Components/RelateProduct/RelateProduct'
 
 const Product = () => {
-  const products = all_product;
-  const { id } = useParams();
-  const product = products.find((product) => product.id === Number(id));
+  const Products = AllProduct
+  const { id } = useParams()
+  const product = Products.find((product => product.id === Number(id)))
   return (
-    <div>
-      <Breadcurm product={product} />
-      <Display product={product} />
-    </div>
-  );
+    <>
+      <ProductDisplay product={product}/>
+      <RelateProduct/>
+    </>
+  )
 }
 
-export default Product;
+export default Product

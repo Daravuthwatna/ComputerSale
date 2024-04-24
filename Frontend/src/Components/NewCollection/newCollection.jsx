@@ -1,7 +1,7 @@
-import data from '../../assets/Popular_Product'; 
-import Item from '../Item/item';
+import NewCollect from '../../assets/Data/NewCollection'
+import Item from '../Item/Item.jsx'
 
-const newCollection = () => {
+const NewCollection = () => {
   return (
     <div className='main-product'>
       <div className="product">
@@ -9,7 +9,7 @@ const newCollection = () => {
         <hr />
         <div className='product-item-main'>
           <div className="product-item">
-            {data.map((e) => (
+            {NewCollect.map((e) => (
               <Item
                 key={e.id}
                 id={e.id}
@@ -26,4 +26,4 @@ const newCollection = () => {
   )
 }
 
-export default newCollection
+export default NewCollection

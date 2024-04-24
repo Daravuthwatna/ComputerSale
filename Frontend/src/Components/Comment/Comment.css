@@ -1,0 +1,14 @@
+.comment-product {
+  width: 50vw;
+  height: 50vh;
+  background-color: rgba(160, 160, 160, 0.1);
+  padding: 2.5rem 1.5rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  text-align: justify;
+}
+.product-hide-show li hr {
+  height: 0.3rem;
+  background-color: black;
+  border-radius: 20px;
+}

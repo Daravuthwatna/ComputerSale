@@ -1,23 +1,19 @@
-import LeftMenu from '../LeftMenu/leftmenu.jsx'
-import CustomSlider from '../Custom/custom.slider'
-import './hero.css'
-import images from '../../assets/images'
+import './Hero.css'
+import CustomSlider from './Custom/custom.slider.jsx'
+import images from '../../assets/Data/images'
 
-const hero = () => {
+const Hero = () => {
   return (
     <div className='hero'>
-      <div className="hero-List">
-        <LeftMenu/>
-        <CustomSlider>
-          {images.map((image, index) =>{
-            return (
-              <img key={index} src={image.imgURL} alt={image.imgAlt} />
-            )
-          })}
-        </CustomSlider>
-      </div>
+      <CustomSlider>
+        {images.map((image, index) =>{
+          return (
+            <img key={index} src={image.imgURL} alt={image.imgAlt}/>
+          )
+        })}
+      </CustomSlider>
     </div>
   )
 }
 
-export default hero
+export default Hero

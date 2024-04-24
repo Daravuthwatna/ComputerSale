@@ -1,8 +1,10 @@
 import { Link } from 'react-router-dom'
-import './breadcurm.css'
+import './Breadcurm.css'
 
-const breadcurm = (e) => {
+const Breadcurm = (e) => {
+
   const {product} = e
+
   return (
     <div className="breadcurm">
     <span>
@@ -10,12 +12,18 @@ const breadcurm = (e) => {
       <i className="fa-solid fa-chevron-right"></i>
     </span>
     <span>
-      <>{product.category}</>
+      <>{product.cartgory}</>
       <i className="fa-solid fa-chevron-right"></i>
     </span>
-    <span>{product.title}</span>  
+    <span>
+      <>{product.brand}</>
+      <i className="fa-solid fa-chevron-right"></i>
+    </span>  
+    <span>
+      <>{product.title}</>
+    </span> 
   </div>
   )
 }
 
-export default breadcurm
+export default Breadcurm

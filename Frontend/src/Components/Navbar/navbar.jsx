@@ -1,30 +1,47 @@
-import { useRef, useState } from "react"
-import { Link } from "react-router-dom"
-import "./navbar.css"
+import { Link } from 'react-router-dom'
+import './Navbar.css'
+import { useState } from 'react'
+import DropLaptop from './Drop/dropLaptop'
+import DropAccessory from './Drop/dropAccessory'
 
 const Navbar = () => {
 
-  const [menu, setMenu] = useState('shop');
-  const menuRef = useRef();
+  const [isVisible1, setIsvisible1] = useState(false)
+  const [isVisible2, setIsvisible2] = useState(false)
+
+  const handleLaptopEnter = ()=> {
+    setIsvisible1(<DropLaptop/>)
+  }
+  const handleLaptopLeave = ()=> {
+    setIsvisible1(!<DropLaptop/>)
+  }
+
+  const handleAccessoryEnter = ()=> {
+    setIsvisible2(<DropAccessory/>)
+  }
+  const handleAccessoryLeave = ()=> {
+    setIsvisible2(!<DropAccessory/>)
+  }
 
   return (
     <div className="navbar">
       <div className="nav-logo">
         <i className="fa-solid fa-computer"></i>
-        <p>SHOPPER</p>
+        <p>LAPOTER</p>
       </div>
-      <ul ref={menuRef}>
-        <li onClick={() => setMenu('shop')}>
+      <ul className='navbar-list'>
+        <li>
           <Link to="/">Shopping</Link>
-          {menu === 'shop' ? <hr/> : <></>}
         </li>
-        <li onClick={() => setMenu('computer')}>
-          <Link to="/computer">Computer</Link>
-          {menu === 'computer' ? <hr/> : <></>}
+        <li onMouseEnter={handleLaptopEnter} onMouseLeave={handleLaptopLeave}>
+          <Link to="/laptop">Laptop</Link>
+          {isVisible1 === false ? <i className="fa-solid fa-angle-right"></i> : <i className="fa-solid fa-angle-down"></i>}
+          {isVisible1 && <DropLaptop/>}
         </li>
-        <li onClick={() => setMenu('accessory')}>
+        <li onMouseEnter={handleAccessoryEnter} onMouseLeave={handleAccessoryLeave}>
           <Link to="/accessory">Accessory</Link>
-          {menu === 'accessory' ? <hr/> : <></>}
+          {isVisible2 === false ? <i className="fa-solid fa-angle-right"></i> : <i className="fa-solid fa-angle-down"></i>}
+          {isVisible2 && <DropAccessory/>}
         </li>
       </ul>
       <div className="nav-login-cart">
@@ -40,4 +57,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar;
+export default Navbar

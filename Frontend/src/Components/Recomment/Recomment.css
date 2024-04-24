@@ -1,0 +1,27 @@
+.container-recomment {
+  display: grid;
+  place-items: center;
+}
+.recomment {
+  margin: 1.5rem 0;
+  width: 90vw;
+}
+.list-recomment {
+  list-style-type: none;
+  text-align: center;
+}
+.list-recomment li {
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: rgba(211, 211, 211, 0.3);
+  margin: 25px;
+  border-radius: 50px;
+}
+.list-recomment li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  letter-spacing: 1px;
+  padding: 5px;
+  transition:all 0.5s linear;
+}
