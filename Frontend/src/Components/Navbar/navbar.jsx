@@ -1,10 +1,13 @@
 import { Link } from 'react-router-dom'
 import './Navbar.css'
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 import DropLaptop from './Drop/dropLaptop'
 import DropAccessory from './Drop/dropAccessory'
+import { ShopContext } from '../../Context/ShopContext'
 
 const Navbar = () => {
+
+  const { getTotalIcon } = useContext(ShopContext)
 
   const [isVisible1, setIsvisible1] = useState(false)
   const [isVisible2, setIsvisible2] = useState(false)
@@ -51,7 +54,7 @@ const Navbar = () => {
         <Link to='/cart'>
           <i className="fa-solid fa-cart-shopping"></i>
         </Link>
-        <div className="nav-cart-count">0</div>
+        <div className="nav-cart-count">{getTotalIcon()}</div>
       </div>
     </div>
   )

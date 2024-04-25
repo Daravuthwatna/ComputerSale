@@ -1,5 +1,4 @@
-import CartItem from '../Components/CartItem/CartItem'
-import './Style/cart.css'
+import CartItem from '../Components/CartItem/CartItem.jsx'
 
 const Cart = () => {
   return (
