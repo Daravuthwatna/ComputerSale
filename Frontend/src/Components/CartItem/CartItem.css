@@ -37,11 +37,17 @@
   grid-template-columns: 1fr 1fr 1fr;
 }
 .cartitem-quantity .cartitem-quantity-icon {
-  margin: 0 0.2rem;
-  padding: 0.2rem;
+  margin: 0 0.5rem;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid black;
 }
 .cartitem-quantity .cartitem-quantity-number{
-  padding: 0.5rem;
+  width: 45px;
+  height: 45px;
+  border-radius: 5px;
+  border: 1px solid black;
 }
 .cartitem-remove {
   display: grid;

@@ -4,7 +4,7 @@ import { ShopContext } from '../../Context/ShopContext';
 import { Link } from 'react-router-dom';
 
 const CartItem = () => {
-  const { AllProduct, removeToCart, cartItem, getTotalCartAmount, addToCart } = useContext(ShopContext);
+  const { AllProduct, removeToCart, cartItem, getTotalCartAmount, addToCart, removeAllCart } = useContext(ShopContext);
 
   const handleRemoveFromCart = (productId) => {
     removeToCart(productId);
@@ -13,6 +13,10 @@ const CartItem = () => {
   const handleAddFromCart = (productId) => {
     addToCart(productId);
   };
+
+  const handleRemoveAllFromCart = (productId) => {
+    removeAllCart(productId);
+  }
 
   return (
     <div className='cartitem-container'>
@@ -24,7 +28,7 @@ const CartItem = () => {
           <p>Quantity</p>
           <p>Total</p>
           <p>View</p>
-          <p>Remove</p>
+          <p>Remove All</p>
         </div>
         <hr />
         {AllProduct.map((product) => {
@@ -43,8 +47,8 @@ const CartItem = () => {
                 <Link to={`/product/${product.id}`}>
                   <i className="fa-solid fa-eye"></i>
                 </Link>
-                <button className='cartitem-remove' onClick={() => handleRemoveFromCart(product.id)}>
-                  <i className="fa-solid fa-xmark"></i>
+                <button className='cartitem-remove' onClick={() => handleRemoveAllFromCart(product.id)}>
+                <i className="fa-solid fa-trash"></i>
                 </button>
                 <hr />
               </div>

@@ -24,6 +24,11 @@ const ShopContextProvider = (p) => {
     console.log(cartItem);
   }
 
+  const removeAllCart = (itemId) => {
+    setCartItem((prev) => ({ ...prev, [itemId]: 0}));
+    console.log(cartItem);
+  }
+
   const getTotalCartAmount = () => {
     let totalAmount = 0;
     for (const item in cartItem) {
@@ -45,7 +50,7 @@ const ShopContextProvider = (p) => {
     return totalItem
   }
 
-  const contextValue = { AllProduct, cartItem, addToCart, removeToCart, getTotalCartAmount, getTotalIcon };
+  const contextValue = { AllProduct, cartItem, addToCart, removeToCart, getTotalCartAmount, getTotalIcon, removeAllCart };
 
   return (
     <ShopContext.Provider value={contextValue}>
