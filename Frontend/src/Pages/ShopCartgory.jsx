@@ -11,6 +11,12 @@ const ShopCartgory = (e) => {
 
   const [isSort, setIsSort] = useState(false)
 
+  // const [isVisibe, setIsVisibe] = useState(8)
+
+  // const handleLoadMore =()=> {
+  //   setIsVisibe((prevValue)=>prevValue + 4);
+  // }
+
   const handleSort =()=> {
     if (isSort === false) {
       setIsSort(<SortByBrand/>)
@@ -34,7 +40,8 @@ const ShopCartgory = (e) => {
     <div className="product">
       <div className='product-item-main'>
         <div className="product-item">
-          {AllProduct.map((item, i) => {
+        {AllProduct.map((item, i) => {
+          {/* {AllProduct.slice(0, isVisibe).map((item, i) => {  */}
             if (e.cartgory === item.cartgory) {
               return (
                 <Item
@@ -51,6 +58,9 @@ const ShopCartgory = (e) => {
         </div>
       </div>
     </div>
+    {/* <div className='load-more'>
+      <button onClick={handleLoadMore}>Load More</button>
+    </div> */}
     <Recomment/>
   </div>
   )

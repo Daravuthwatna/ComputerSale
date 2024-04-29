@@ -8,3 +8,25 @@
 .breadcurm span i {
   padding: 0 1rem;
 }
+@media (max-width: 1024px) {
+}
+@media (max-width: 900px) {
+  .breadcurm {
+    padding: 2.5rem 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .main-breadcurm{
+    display: grid;
+    place-items: center;
+  }
+  .breadcurm {
+    padding: 1rem;
+  }
+  .breadcurm span {
+    font-size: 0.9rem;
+  }
+  .breadcurm span i {
+    padding: 0 0.5rem;
+  }
+}

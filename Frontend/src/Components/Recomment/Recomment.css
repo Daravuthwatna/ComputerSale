@@ -25,3 +25,27 @@
   padding: 5px;
   transition:all 0.5s linear;
 }
+@media (max-width: 1024px) {
+
+}
+@media (max-width: 900px) {
+  .recomment{
+    margin: 0;
+  }
+  .list-recomment li {
+    padding: 0.5rem;
+    margin: 0.5rem;
+  }
+  .list-recomment li a {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 500px) {
+  .list-recomment li {
+    padding: 0.3rem;
+    margin: 0.5rem;
+  }
+  .list-recomment li a {
+    font-size: 0.8rem;
+  }
+}

@@ -32,3 +32,53 @@
   background-color: black;
   color: white;
 }
+@media (max-width: 1024px) {
+
+}
+@media (max-width: 900px) {
+  .item {
+    padding: 3rem;
+    margin: 2rem;
+  }
+  .item h2 {
+    padding: 0.5rem 0;
+    font-size: 3rem;
+  }
+  .item h3 {
+    padding: 0.5rem 0 0 0;
+    font-size: 2rem;
+  }
+  .item h4 {
+    padding: 0 0 0.5rem 0;
+    font-size: 1.5rem;
+  }
+  .item button {
+    padding: 0.5rem 2rem;
+    margin: 1rem 0  ;
+  }
+}
+@media (max-width: 500px) {
+  .item {
+    padding: 0.5rem;
+    margin: 0.5rem;
+  }
+  .item img{
+    width: 35vw;
+  }
+  .item h2 {
+    padding: 0.25rem 0;
+    font-size: 1.8rem;
+  }
+  .item h3 {
+    padding: 0.25rem 0 0 0;
+    font-size: 1.3rem;
+  }
+  .item h4 {
+    padding: 0 0 0.25rem 0;
+    font-size: 1rem;
+  }
+  .item button {
+    padding: 0.2rem 1rem;
+    margin: 0.5rem 0  ;
+  }
+}

@@ -45,7 +45,7 @@ const CartItem = () => {
                 </div>
                 <p>${product.price * cartItem[product.id]}</p>
                 <Link to={`/product/${product.id}`}>
-                  <i className="fa-solid fa-eye"></i>
+                  <i className="fa-solid fa-eye view-icon"></i>
                 </Link>
                 <button className='cartitem-remove' onClick={() => handleRemoveAllFromCart(product.id)}>
                 <i className="fa-solid fa-trash"></i>

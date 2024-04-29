@@ -72,6 +72,7 @@ const ProductDisplay = (e) => {
           {isCommentClicked ? (
             <Comment />
           ) : (
+          <div className='main-product-detail'>
             <div className="detail-product">
               <h1>{product.title} - <span>{product.brand}</span></h1>
               <ul className='list-detail'>
@@ -83,6 +84,7 @@ const ProductDisplay = (e) => {
                 <i className="fa-solid fa-cart-shopping"></i>
               </button>
             </div>
+          </div>
           )}
         <div className="recomment-product">
           <Recomment/>

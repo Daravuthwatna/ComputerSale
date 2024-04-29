@@ -1,3 +1,7 @@
+.main-comment-product {
+  display: grid;
+  place-items: center;
+}
 .comment-product {
   width: 50vw;
   height: 50vh;
@@ -11,4 +15,19 @@
   height: 0.3rem;
   background-color: black;
   border-radius: 20px;
+}
+@media (max-width: 1024px) {
+}
+@media (max-width: 900px) {
+  .comment-product {
+    width: 90vw;
+    padding: 2rem 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .comment-product {
+    width: 20rem;
+    padding: 2rem 1rem;
+    font-size: 1rem;
+  }
 }

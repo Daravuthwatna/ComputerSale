@@ -92,3 +92,108 @@
   border-radius: 0px 50px 50px 0px;
   border: 1px solid black;
 }
+@media (max-width: 1024px) {
+}
+@media (max-width: 900px) {
+  .cartitem-promo {
+    padding: 0rem 2rem;
+  }
+  .cartitem-list p {
+    font-size: 1rem;
+  }
+  .cartitem-quantity .cartitem-quantity-icon {
+    margin: 0 0.5rem;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid black;
+  }
+  .cartitem-quantity .cartitem-quantity-number{
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid black;
+  }
+}
+@media (max-width: 500px) {
+  .cartitem {
+    width: 90vw;
+    margin: 0rem;
+  }
+  .cartitem-main {
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
+    place-items: center;
+  }
+  .cartitem-main p {
+    font-size: 1rem;
+    margin-top: 1rem;
+    font-weight: 790;
+  }
+  .cartitem-list {
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
+    place-items: center;
+  }
+  .cartitem-list img {
+    width: 10vw;
+    margin-top: 1rem;
+  }
+  .cartitem-list p {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+  }
+  .cartitem-quantity {
+    margin-top: 1rem;
+  }
+  .cartitem-quantity .cartitem-quantity-icon {
+    margin: 0 0.5rem;
+    width: 20px;
+    height: 20px;
+  }
+  .cartitem-quantity .cartitem-quantity-number{
+    width: 25px;
+    height: 25px;
+  }
+  .view-icon {
+    margin-top: 1rem;
+  }
+  .cartitem-remove {
+    margin-top: 1rem;
+    width: 25px;
+    height: 25px;
+  }
+  
+  .cartitem-down-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 3rem 0 0 0;
+  }
+  .cartitem-total-item {
+    padding: 1.5rem;
+  }
+  .cartitem-total-item p {
+    font-size: 1.2rem;
+  }
+  .cartitem-total-item .total-item {
+    font-weight: 700;
+  }
+  .cartitem-promo {
+    padding: 0rem 1rem;
+  }
+  .cartitem-promobox {
+    padding: 2rem 0;
+  }
+  .cartitem-promobox input {
+    padding: 0.5rem 1rem;
+    border-radius: 50px 0 0px 50px;
+    border: 1px solid black;
+  }
+  .cartitem-promobox button {
+    padding: 0.5rem 1rem;
+    border-radius: 0px 50px 50px 0px;
+    border: 1px solid black;
+  }
+}

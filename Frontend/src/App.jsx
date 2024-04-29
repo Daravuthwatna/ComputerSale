@@ -7,6 +7,7 @@ import Product from './Pages/Product.jsx'
 import Cart from './Pages/Cart.jsx'
 import LoginSign from './Pages/LoginSign.jsx'
 import Navbar from './Components/Navbar/Navbar.jsx'
+import Footer from './Components/Footer/Footer.jsx'
 import BN1 from './assets/ImgBanner/BN1.png'
 import BN2 from './assets/ImgBanner/BN2.png'
 import BN3 from './assets/ImgBanner/BN3.png'
@@ -15,7 +16,6 @@ import BN6 from './assets/ImgBanner/BN6.png'
 import BN7 from './assets/ImgBanner/BN7.png'
 import BN8 from './assets/ImgBanner/BN8.png'
 import BN9 from './assets/ImgBanner/BN9.png'
-import Footer from './Components/Footer/Footer.jsx'
 
 const App = () => {
   return (
@@ -32,6 +32,7 @@ const App = () => {
         <Route path='/accessory/razer' element={<ShopBrand brand='Razer' banner={BN1} />}/>
         <Route path='/accessory/adata' element={<ShopBrand brand='Adata' banner={BN6} />}/>
         <Route path='/accessory/tp-Link' element={<ShopBrand brand='Tp-Link' banner={BN1} />}/>
+        <Route path='/accessory/keychron' element={<ShopBrand brand='KeyChron' banner={BN1} />}/>
         <Route path='/accessory/samsung' element={<ShopBrand brand='Samsung' banner={BN9} />}/>
         <Route path='/accessory/keyboard' element={<ShopSpace space='KeyBoard' banner={BN9} />}/>
         <Route path='/accessory/mouse' element={<ShopSpace space='Mouse' banner={BN1} />}/>
@@ -45,6 +46,7 @@ const App = () => {
         <Route path='/login' element={<LoginSign/>} />
       </Routes>
       <Footer/>
+      {/* <IconScroll/> */}
     </BrowserRouter>
   )
 }

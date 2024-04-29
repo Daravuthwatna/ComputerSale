@@ -41,20 +41,14 @@
   place-items: center;
   font-size: 1rem;
 }
+.navbar .navbar-list li a:hover {
+  color: darkgray;
+  transition: 0.5s;
+}
 .navbar .navbar-list li i {
   font-size: 1rem;
   margin: 1rem 0.3rem;
 }
-/* .navbar ul hr {
-  position: absolute;
-  bottom: -5px;
-  left: 0px;
-  width: 40%;
-  border: none;
-  height: 2px;
-  border-radius: 10px;
-  background-color: black;
-} */
 .nav-login-cart {
   display: grid;
   place-items: center;
@@ -75,10 +69,14 @@
   color: black;
   font-size: 1.5rem;
 }
+.nav-cart {
+  display: flex;
+  position: relative;
+}
 .nav-cart-count {
   position: absolute;
-  top: 10px;
-  right: 195px;
+  top: -0.3rem;  
+  left: 1.2rem;
   width: 15px;
   height: 15px;
   display: flex;
@@ -87,4 +85,77 @@
   font-size: 14px;
   background-color: black;
   color: white;
+}
+.nav-dropdown {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .nav-logo i {
+    font-size: 1.8rem;
+  }
+  .nav-logo p {
+    font-size: 1.7rem;
+  }
+  .navbar .navbar-list li i {
+    font-size: 1.3rem;
+    margin: 1rem 0.3rem;
+  }
+}
+@media (max-width: 900px) {
+  .navbar {
+    padding: 0 1rem;
+    grid-template-columns: 1fr 1fr;
+  }
+  .toggle-button {
+    padding: 0 2rem;
+  }
+  .nav-dropdown {
+    display: block;
+  }
+  .navbar-list {
+    display: none !important;
+    position: absolute;
+    top: 60px;
+    background-color: rgba(255, 255, 255, 0.99);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 5rem;
+  }
+  .navbar-list li a {
+    padding: 0 4rem;
+  }
+  .navbar-list li i {
+    display: none;
+  }
+  .navbar-list-toggle {
+    display: grid !important ;
+    place-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .navbar {
+    padding: 0 0.5rem;
+  }
+  .nav-logo i {
+    font-size: 1.2rem;
+  }
+  
+  .nav-logo p {
+    font-size: 1.2rem;
+  }
+  .toggle-button {
+    padding: 0 1rem;
+  }
+  .navbar-list li a {
+    padding: 0 2rem;
+  }
+  .navbar .navbar-list li a {
+    font-size: 0.8rem;
+  }
+  .nav-login-cart button {
+    padding: 5px 10px;
+    font-size: 1rem;
+  }
 }

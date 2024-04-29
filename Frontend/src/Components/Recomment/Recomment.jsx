@@ -18,6 +18,7 @@ const Recomment = () => {
           <li><Link onClick={handleClick} to='/accessory/razer'>Razer</Link></li>
           <li><Link onClick={handleClick} to='/accessory/adata'>Adata</Link></li>
           <li><Link onClick={handleClick} to='/accessory/tp-Link'>Tp-Link</Link></li>
+          <li><Link onClick={handleClick} to='/accessory/keychron'>KeyChron</Link></li>
           <li><Link onClick={handleClick} to='/accessory/samsung'>Samsung</Link></li>
           <li><Link onClick={handleClick} to='/accessory/keyboard'>KeyBoard</Link></li>
           <li><Link onClick={handleClick} to='/accessory/mouse'>Mouse</Link></li>

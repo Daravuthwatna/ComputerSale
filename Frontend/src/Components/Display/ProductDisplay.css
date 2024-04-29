@@ -6,7 +6,6 @@
   width: 90vw;
   margin: 1rem;
   padding: 1rem 2rem;
-  /* background-color: rgba(220, 220, 220, 0.2); */
   grid-template-columns: 1fr 1fr;
   display: grid;
 }
@@ -63,7 +62,6 @@
 }
 .recomment-product {
   width: 50vw;
-  /* background-color: red; */
   overflow-y: hidden;
 }
 .product-hide-show {
@@ -74,4 +72,119 @@
   font-size: 1rem;
   padding: 1rem;
   cursor: pointer;
+}
+@media (max-width: 1024px) {
+}
+@media (max-width: 900px) {
+  .products {
+    width: 90vw;
+    margin: -1rem;
+    padding: 1rem;
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+  .main-picture img {
+    width: 50vw;
+  }
+  .product-button i {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+  .main-product-detail {
+    display: grid;
+    place-items: center;
+  }
+  .detail-product {
+    width: 80vw;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+  .detail-product h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-bottom: 1.5rem;
+  }
+  .list-detail li {
+    padding: 0.5rem 0;
+  }
+  .list-detail li p {
+    font-size: 1rem;
+  }
+  .list-detail li p span {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  .right-product button {
+    margin: 1rem 0;
+    padding: 0.5rem 2rem;;
+  }
+  .right-product i {
+    font-size: 1rem;
+  }
+  .product-hide-show {
+    padding:  0 2rem;
+  }
+  .recomment-product {
+    width: 90vw;
+    /* overflow-y: hidden; */
+  }
+  .product-hide-show li {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .products {
+    width: 90vw;
+    margin: -1rem;
+    padding: 1rem;
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+  .main-picture img {
+    width: 50vw;
+  }
+  .product-button i {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+  .main-product-detail {
+    display: grid;
+    place-items: center;
+  }
+  .detail-product {
+    width: 19rem;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+  .detail-product h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-bottom: 1.5rem;
+  }
+  .list-detail li {
+    padding: 0.5rem 0;
+  }
+  .list-detail li p {
+    font-size: 1rem;
+  }
+  .list-detail li p span {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  .right-product button {
+    margin: 1rem 0;
+    padding: 0.5rem 2rem;;
+  }
+  .right-product i {
+    font-size: 1rem;
+  }
+  .recomment-product {
+    width: 19rem;
+    /* overflow-y: hidden; */
+  }
+  .product-hide-show li {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
 }
