@@ -46,7 +46,6 @@ const App = () => {
         <Route path='/login' element={<LoginSign/>} />
       </Routes>
       <Footer/>
-      {/* <IconScroll/> */}
     </BrowserRouter>
   )
 }
